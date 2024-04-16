@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "../Container";
+import Image from "next/image";
 
 
 const NavBar = () => {
@@ -7,7 +8,7 @@ const NavBar = () => {
     sticky
     top-0
     w-full
-    bg-slate-200
+    bg-white-200
     z-30
     shadow-sm
     ">
@@ -18,7 +19,9 @@ const NavBar = () => {
                                 justify-between
                                 gap-3
                                 md:gap-0">
-                    <Link href="/"> MbewaSoaps</Link>
+                    <Link href="/">
+                        <Image src="/mbewa.png" alt="Logo" width={120} height={40} />
+                    </Link>
                     <div className="hidden md:block">Search</div>
                     <div className="flex
                                     items-center
